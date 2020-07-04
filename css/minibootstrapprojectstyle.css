@@ -1,0 +1,177 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.bg-color{
+    background-color: #1e3953;
+}
+.color-green{
+    color: #93c83f;
+}
+.font-size{
+    font-size: 11px;
+}
+.font-size-1{
+    font-size: 22px;
+}
+.font-size-1:hover{
+    color: #2e5275;
+}
+.icons-right{
+    padding-left: 19rem;
+}
+.font-size-2{
+    font-size: 13px;
+    /* font-weight: 550; */
+    font-family: 'Roboto', sans-serif;
+}
+.logo-left{
+    padding-right: 23rem;
+}
+
+.lg-text{
+    font-weight: 600;
+}
+.text-left{
+    margin-bottom: 90px;
+    margin-left: -29px;
+    
+}
+.text-center-1{
+    margin-bottom: 12rem;
+}
+.width{
+    height: 280px;
+    margin: 0rem 2rem;
+}
+.sm-line hr{
+    border: 1px solid green;
+    width: 50px;
+    transition: all 1s linear;
+
+    
+}
+.on-hover:hover .sm-line hr{
+    transform: scalex(3);
+    transition: all 1s linear;
+}
+.font-size-3{
+    font-size: 3rem;
+}
+.padding-to-center{
+    padding: 8rem 8rem;
+}
+.font-size-4{
+    font-size: 12px;
+}
+.font-size-5{
+    font-size: 16px;
+}
+.font-size-6{
+    margin: 10px;
+}
+.rotate{
+    transform: rotate(270deg);
+    border: 1px solid gray;
+    background-color: transparent;
+    border-radius: 31px;
+}
+.top-link-icons{
+    background-color: rgba(255, 255, 255, 0.15);
+    width: 30px;
+    height: 30px;
+    display: inline-flex;
+    line-height: 1;
+    margin: 0 5px;
+    text-align: center;
+    justify-content: center;
+    transform: scale(0.9);
+    border-radius: 4px;
+    transition: all 0.5s ease;
+}
+
+.top-link-icons:hover{
+    background-color: var(--success);
+    transition: all 0.5s ease;
+}
+.mega-menu{
+    border: 0 !important;
+    border-top: 1px solid var(--success) !important;
+    border-radius: 0; 
+}
+.search-field{
+    position: absolute;
+    right: 0;
+    width: 50%;
+    top: 0px;
+    display: none;
+
+}
+.search-btn:hover{
+    position: absolute;
+    z-index: 1;
+    right: 0;
+}
+.search-btn:hover + .search-field{
+    display: block;
+}
+.carousel-item .anim{
+    opacity: 0;
+}
+.on-hover{
+    background-color: white;
+}
+.on-hover::before,
+.on-hover::after {
+    content: '';
+    width: 80%;
+    height: 80%;
+    position: absolute;
+    background: #ddd;
+    z-index: -1;
+    top: -1.5px;
+    left: -1.5px;
+    transition: all 1s ease;
+}
+.on-hover::after{
+    top: auto;
+    left: auto;
+    bottom: -1.5px;
+    right: -1.5px;
+}
+.on-hover:hover:before,
+.on-hover:hover:after{
+    width: calc(100% + 2px);
+    height: calc(100% + 2px);
+    transition: all 1s ease;
+    background-color: var(--success);
+}
+.home-icon-2:hover{
+    background-color: var(--success);
+    color: black
+}
+
+.carousel-item.active .anim{
+    animation: fadeUp 1s ease 1 forwards;
+}
+
+@keyframes fadeUp{
+    0%{
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    100%{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+.box-shadow{
+    box-shadow: 10px 10px 5px #aaaaaa;
+}
+
+@media(min-width:768px) and (max-width:1023px){
+    .icons-right{
+        width: 100%;
+    }
+}
